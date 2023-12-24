@@ -82,7 +82,7 @@ class FCPDCrime:
             frequency = str(round((i[1] * 100) / total_sum, 2)) + '%'
             print("{:<20} {:<20} {:<20}".format(i[0], i[1], frequency))
 
-    def load(self, file = "C:/Users/mella/OneDrive/Desktop/GMU/IT 209/CrimeReports (1).csv"):
+    def load(self, file = "CrimeReports (1).csv"):
         self.file = file
         with open(self.file, 'r') as x:
             self.read = x.readlines()
